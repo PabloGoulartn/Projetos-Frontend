@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: Overpass;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+}
+
+.card-container {
+    width: 400px;
+    height: 380px;
+    border-radius: 6%;
+    display: grid;
+    grid-template-columns: 85%;
+    grid-template-rows: 20% 15% 20% 18% 20%;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: radial-gradient(hsl(213, 19%, 18%), hsl(213, 19%, 18%));
+    background-position: 20px;
+}
+
+.background-item {
+    background-color: hsl(215, 15%, 26%);
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    position: relative;
+}
+
+.background-item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.card-header {
+    color: white;
+    font-size: 14px;
+}
+
+.card-body p {
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+    line-height: 1.5;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.button-list {
+    color: hsl(217, 12%, 63%);
+}
+
+.button-list:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    font-weight: 700;
+}
+
+.button-list:focus {
+    background-color: hsl(217, 12%, 63%);   
+    color: white;
+}
+
+.button-submit {
+    width: 100%;
+    height: 45px;
+    border-radius: 30px;
+    background-color: hsl(25, 97%, 53%);
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.button-submit:active {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
